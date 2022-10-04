@@ -16,7 +16,7 @@ function Home() {
 
     useEffect(() => {
         axios
-        .get('http://localhost:8000/signup')
+        .get('https://babasardaarserver.herokuapp.com/signup')
         .then(res =>{ 
           
           setUserData(res.data)
