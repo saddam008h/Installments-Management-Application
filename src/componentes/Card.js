@@ -21,7 +21,7 @@ function NavTabsExample(props) {
 
     const fetchUserData = useCallback(() => {
       axios
-        .get('http://localhost:8000/signup/'+id)
+        .get('https://babasardaarserver.herokuapp.com/signup/'+id)
         .then(res =>{ 
           setUserData(res.data)
     })
@@ -30,7 +30,7 @@ function NavTabsExample(props) {
     
     const fetchInstallments = useCallback(() => {
       axios
-          .get('http://localhost:8000/paid/'+id)
+          .get('https://babasardaarserver.herokuapp.com/paid/'+id)
           .then((res)=>{
             setInstallmentArray(res.data)
           })
