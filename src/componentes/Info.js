@@ -19,7 +19,7 @@ export default function Info(props) {
     function saveInfo(e) {
         e.preventDefault();
         axios
-        .put("http://localhost:8000/signup/"+props.userData._id,formData)
+        .put("https://babasardaarserver.herokuapp.com/signup/"+props.userData._id,formData)
         .then((res)=>{
             props.setShowSave(false);
           
