@@ -21,7 +21,7 @@ function NavTabsExample(props) {
 
     const fetchUserData = useCallback(() => {
       axios
-        .get('https://babasardaarserver.herokuapp.com/signup/'+id)
+        .get('https://baba-sardaar.vercel.app/signup/'+id)
         .then(res =>{ 
           setUserData(res.data)
     })
@@ -30,7 +30,7 @@ function NavTabsExample(props) {
     
     const fetchInstallments = useCallback(() => {
       axios
-          .get('https://babasardaarserver.herokuapp.com/paid/'+id)
+          .get('https://baba-sardaar.vercel.app/paid/'+id)
           .then((res)=>{
             setInstallmentArray(res.data)
           })
