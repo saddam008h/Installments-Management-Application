@@ -19,7 +19,7 @@ function BasicExample() {
     const onsubmit = event => {
         event.preventDefault()
         axios
-          .post('https://babasardaarserver.herokuapp.com/signup', form)
+          .post('https://baba-sardaar.vercel.app/signup', form)
           .then(res => {
             if (res.status ===200) {
             
