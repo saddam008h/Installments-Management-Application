@@ -17,7 +17,7 @@ export default function AddInstallment(props) {
         event.preventDefault()
         
         axios
-          .post('https://babasardaarserver.herokuapp.com/paid', {paid:value, id:props.id, price:props.price})
+          .post('https://baba-sardaar.vercel.app/paid', {paid:value, id:props.id, price:props.price})
           .then((e)=>{
             props.fetchInstallments()
             props.modal(false)
