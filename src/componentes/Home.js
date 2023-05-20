@@ -16,7 +16,7 @@ function Home() {
 
     useEffect(() => {
         axios
-        .get('https://babasardaarserver.herokuapp.com/signup')
+        .get('https://baba-sardaar.vercel.app/signup')
         .then(res =>{ 
           
           setUserData(res.data)
